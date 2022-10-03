@@ -33,6 +33,7 @@ function Login() {
           placeholder="Enter Your Email"
           value="ivy@gmail.com"
           name="password"
+          id="login-input"
         />
 
         <br></br>

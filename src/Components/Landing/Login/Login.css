@@ -30,13 +30,13 @@
 
 /* Style of input elements */
 input[type="text"] {
-  margin-left: 30px;
   margin: 30px;
+  margin-left: 50px;
   width: 60%;
   border-radius: 10px;
   background-color: white;
   border-style: none;
-  padding: 20px;
+  padding: 10px;
 }
 
 /* Style of login button */
@@ -53,6 +53,7 @@ input[type="text"] {
   color: white;
   font-weight: 700;
   font-size: 1.2em;
+  margin-top: 50px;
 }
 /* Add a hover effect */
 #login-button:hover {
@@ -67,5 +68,5 @@ input[type="text"] {
   text-decoration: underline;
   display: block;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 60px;
 }
