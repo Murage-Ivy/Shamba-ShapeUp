@@ -1,0 +1,97 @@
+/* Design of the signUp component */
+.signUp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  height: 100vh;
+  padding: 10px;
+  margin: 20px;
+}
+
+.signUp-text {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(1fr);
+  padding: 10px;
+}
+.signUp-text p {
+  font-weight: 300;
+}
+
+.sign-up {
+  width: 50%;
+  padding: 15px;
+  height: 90%;
+  background-color: #eef2e6;
+  color: black;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+
+input {
+  width: 200px;
+  height: 10px;
+  border-style: none;
+  padding: 10px;
+  border-radius: 10px;
+  width: 80%;
+}
+
+#first,
+#second {
+  margin: 0;
+  width: 80%;
+  padding: auto;
+}
+
+.names {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#signup-button {
+  border-style: none;
+  background-color: #1c6758;
+  border-radius: 10px;
+  width: 185px;
+  height: 40px;
+  padding: 5px 25px 5px 25px;
+  margin-bottom: 20px;
+  display: block;
+  margin: 0 auto;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+#feedback {
+  border: 1px solid #3d8361;
+  background-color: #3D8361;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  text-align: justify;
+  width: 80%;
+  height: fit-content;
+}
+
+.one > img {
+  display: block;
+  max-width: 30%;
+  max-height: auto;
+  border-radius: 50%;
+}
+
+.one {
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
