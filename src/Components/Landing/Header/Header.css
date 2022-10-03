@@ -1,0 +1,15 @@
+#header {
+  background-image: url("./Images/countryside-workers-together-field.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 0;
+  position: relative;
+  border:1px solid rgb(184, 183, 183)
+
+}
+#header > h1{
+color: white;
+position: absolute;
+}
+

@@ -1,10 +1,9 @@
 import React from "react";
-import Main from "./Components/Landing/Main";
+import Main from "./Components/Landing/Main./Main";
 
 function App() {
   return (
     <div className="container">
-      Shamba Shape Up
       <Main />
     </div>
   );
