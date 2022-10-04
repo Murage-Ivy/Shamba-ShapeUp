@@ -12,7 +12,7 @@ function App() {
       <SignUp />
       <Main />
       <br/>
-      <PostForm />
+    
       
      
     </div>
