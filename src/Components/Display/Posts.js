@@ -8,11 +8,11 @@ function Posts() {
         <p>Hello there</p>
         <div className="action-button">
           <div id="like-btn">
-            <i class="fa-solid fa-heart"></i>
+            <i className="fa-solid fa-heart"></i>
             <span>0 likes</span>
           </div>
           <div className="comment-btn">
-            <i class="fa-regular fa-comment"></i>
+            <i className="fa-regular fa-comment"></i>
             <span>Commennt</span>
           </div>
         </div>
