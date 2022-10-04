@@ -1,15 +1,26 @@
-import React, { useState } from "react";
-function Posts() {
- const[posts, setPosts] = useState([])
+import React from "react";
+function Posts({ posts }) {
+  const postList = posts.map((post) => (
+    <div key={post.id} className="post">
+      <img src={post.image_url} alt={"farm"} />
+      <p>{post.description}</p>
+      <div className="action-btn">
+        <div id="like-btn">
+          <i className="fa-solid fa-heart"></i>
+          <span>0 likes</span>
+        </div>
+        <div className="comment-btn">
+          <i className="fa-regular fa-comment"></i>
+          <span>Comment</span>
+        </div>
+      </div>
+    </div>
+  ));
 
-  // useEffect(() => {
-  //   fetch(" http://localhost:4000/Animals")
-  //     .then((res) => res.json())
-  //     .then((data) => console.log(data));
-  // }, []);
   return (
     <div className="posts">
-      <div className="post">
+      {postList}
+      {/* <div className="post">
         <img
           id="img"
           src={
@@ -28,7 +39,7 @@ function Posts() {
             <span>Comment</span>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
