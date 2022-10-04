@@ -20,10 +20,12 @@
     },
     {
       "id": 1,
-      "image_url":"https://thehipchick.com/wp-content/uploads/2019/10/rooster-and-hens-in-the-garden-ee220716-1024x597.jpg.webp",
+      "image_url": "https://thehipchick.com/wp-content/uploads/2019/10/rooster-and-hens-in-the-garden-ee220716-1024x597.jpg.webp",
       "Description": "Should I feed my chicken worms?",
       "likes": 0,
-      "comments": ["Napier Grass"]
+      "comments": [
+        "yes, worms are healthy and it should be mixed with the food"
+      ]
     }
   ],
   "Vegetables": [
