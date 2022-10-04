@@ -22,21 +22,24 @@
 .login-text {
   color: white;
   padding: 10px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 50%;
+  margin-right: 20px;
+  border-radius: 20px;
 }
 /* Style of login-text h2 */
 .login-text > h2 {
   font-size: 2.5em;
 }
 
-/* Style of input elements */
-input[type="text"] {
-  margin: 30px;
-  margin-left: 50px;
-  width: 60%;
-  border-radius: 10px;
-  background-color: white;
-  border-style: none;
-  padding: 10px;
+/* Style of password login and email login */
+#password-login,
+#email-login {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* Style of login button */

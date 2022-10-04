@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;700&display=swap");
-
+/* General styling */
 * {
   font-family: "Outfit", sans-serif;
 }
@@ -10,8 +10,22 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   height: 100vh;
-  background-color: #1c6c5c;
+  background-color: #1c6758;
 }
 p {
   font-size: 16px;
+}
+/* Style for all input labels */
+label {
+  color: rgb(102, 101, 101);
+}
+/* Stye for all input forms */
+input {
+  width: 200px;
+  height: 10px;
+  border-style: none;
+  padding: 15px;
+  border-radius: 5px;
+  width: 80%;
+  border: 1px solid rgb(190, 190, 190);
 }

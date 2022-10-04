@@ -5,7 +5,6 @@
   background-size: 100% 100%;
   margin: 0;
   position: relative;
-  background-color: darkgrey;
 }
 
 #header::after {
@@ -20,16 +19,23 @@
   opacity: 0.2;
   z-index: 1000;
 }
-/* Header section styling */
+/* ====Header section styling ====*/
 .header-section {
   position: absolute;
-  left: 40%;
+  left: 30%;
   top: 50%;
   transform: translateX(-50%);
   transform: translateY(-50%);
   color: white;
   text-align: center;
-  font-size: 20px;
+}
+.header-section h1{
+  font-size: 4em;
+}
+.header-section a{
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
 }
 /* Button styling */
 #header-button {

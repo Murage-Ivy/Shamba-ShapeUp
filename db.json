@@ -1,23 +1,52 @@
 {
-    "employees": [
-      {
-        "id": 1,
-        "first_name": "Sebastian",
-        "last_name": "Eschweiler",
-        "email": "sebastian@codingthesmartway.com"
-      },
-      {
-        "id": 2,
-        "first_name": "Steve",
-        "last_name": "Palmer",
-        "email": "steve@codingthesmartway.com"
-      },
-      {
-        "id": 3,
-        "first_name": "Ann",
-        "last_name": "Smith",
-        "email": "ann@codingthesmartway.com"
-      }
-    ]
-  }
-  
+  "Farmers": [
+    {
+      "id": 1,
+      "first_name": "Sebastian",
+      "last_name": "Eschweiler",
+      "email": "sebastian@codingthesmartway.com",
+      "telephone": "0718789056",
+      "password": "1256890"
+    }
+  ],
+  "Topics": [
+    {
+      "Animals": [
+        {
+          "id": 1,
+          "image_url": "https://images.ctfassets.net/ww1ie0z745y7/4G2C16VwTanIGGrXJS3Wwj/8efa3e547c3ac97fd2705e61367d004f/4897377992_7df29b4d3c_b.jpeg?q=75",
+          "Description": "Which food should I feed my cows",
+          "likes": 0,
+          "comments": ["Napier Grass"]
+        }
+      ],
+      "Vegetables": [
+        {
+          "id": 1,
+          "image_url": "https://images.ctfassets.net/ww1ie0z745y7/4G2C16VwTanIGGrXJS3Wwj/8efa3e547c3ac97fd2705e61367d004f/4897377992_7df29b4d3c_b.jpeg?q=75",
+          "Description": "Which food should I feed my cows",
+          "likes": 0,
+          "comments": ["Napier Grass"]
+        }
+      ],
+      "Fruits": [
+        {
+          "id": 1,
+          "image_url": "https://images.ctfassets.net/ww1ie0z745y7/4G2C16VwTanIGGrXJS3Wwj/8efa3e547c3ac97fd2705e61367d004f/4897377992_7df29b4d3c_b.jpeg?q=75",
+          "Description": "Which food should I feed my cows",
+          "likes": 0,
+          "comments": ["Napier Grass"]
+        }
+      ],
+      "Fertilizers": [
+        {
+          "id": 1,
+          "image_url": "https://images.ctfassets.net/ww1ie0z745y7/4G2C16VwTanIGGrXJS3Wwj/8efa3e547c3ac97fd2705e61367d004f/4897377992_7df29b4d3c_b.jpeg?q=75",
+          "Description": "Which food should I feed my cows",
+          "likes": 0,
+          "comments": ["Napier Grass"]
+        }
+      ]
+    }
+  ]
+}
