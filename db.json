@@ -9,44 +9,48 @@
       "password": "1256890"
     }
   ],
-  "Topics": [
+
+  "Animals": [
     {
-      "Animals": [
-        {
-          "id": 1,
-          "image_url": "https://images.ctfassets.net/ww1ie0z745y7/4G2C16VwTanIGGrXJS3Wwj/8efa3e547c3ac97fd2705e61367d004f/4897377992_7df29b4d3c_b.jpeg?q=75",
-          "Description": "Which food should I feed my cows",
-          "likes": 0,
-          "comments": ["Napier Grass"]
-        }
-      ],
-      "Vegetables": [
-        {
-          "id": 1,
-          "image_url": "https://images.ctfassets.net/ww1ie0z745y7/4G2C16VwTanIGGrXJS3Wwj/8efa3e547c3ac97fd2705e61367d004f/4897377992_7df29b4d3c_b.jpeg?q=75",
-          "Description": "Which food should I feed my cows",
-          "likes": 0,
-          "comments": ["Napier Grass"]
-        }
-      ],
-      "Fruits": [
-        {
-          "id": 1,
-          "image_url": "https://images.ctfassets.net/ww1ie0z745y7/4G2C16VwTanIGGrXJS3Wwj/8efa3e547c3ac97fd2705e61367d004f/4897377992_7df29b4d3c_b.jpeg?q=75",
-          "Description": "Which food should I feed my cows",
-          "likes": 0,
-          "comments": ["Napier Grass"]
-        }
-      ],
-      "Fertilizers": [
-        {
-          "id": 1,
-          "image_url": "https://images.ctfassets.net/ww1ie0z745y7/4G2C16VwTanIGGrXJS3Wwj/8efa3e547c3ac97fd2705e61367d004f/4897377992_7df29b4d3c_b.jpeg?q=75",
-          "Description": "Which food should I feed my cows",
-          "likes": 0,
-          "comments": ["Napier Grass"]
-        }
-      ]
+      "id": 1,
+      "image_url": "https://images.ctfassets.net/ww1ie0z745y7/4G2C16VwTanIGGrXJS3Wwj/8efa3e547c3ac97fd2705e61367d004f/4897377992_7df29b4d3c_b.jpeg?q=75",
+      "Description": "Which food should I feed my cows",
+      "likes": 0,
+      "comments": ["Napier Grass"]
+    },
+    {
+      "id": 1,
+      "image_url":"https://thehipchick.com/wp-content/uploads/2019/10/rooster-and-hens-in-the-garden-ee220716-1024x597.jpg.webp",
+      "Description": "Should I feed my chicken worms?",
+      "likes": 0,
+      "comments": ["Napier Grass"]
+    }
+  ],
+  "Vegetables": [
+    {
+      "id": 1,
+      "image_url": "https://images.ctfassets.net/ww1ie0z745y7/4G2C16VwTanIGGrXJS3Wwj/8efa3e547c3ac97fd2705e61367d004f/4897377992_7df29b4d3c_b.jpeg?q=75",
+      "Description": "Which food should I feed my cows",
+      "likes": 0,
+      "comments": ["Napier Grass"]
+    }
+  ],
+  "Fruits": [
+    {
+      "id": 1,
+      "image_url": "https://images.ctfassets.net/ww1ie0z745y7/4G2C16VwTanIGGrXJS3Wwj/8efa3e547c3ac97fd2705e61367d004f/4897377992_7df29b4d3c_b.jpeg?q=75",
+      "Description": "Which food should I feed my cows",
+      "likes": 0,
+      "comments": ["Napier Grass"]
+    }
+  ],
+  "Fertilizers": [
+    {
+      "id": 1,
+      "image_url": "https://images.ctfassets.net/ww1ie0z745y7/4G2C16VwTanIGGrXJS3Wwj/8efa3e547c3ac97fd2705e61367d004f/4897377992_7df29b4d3c_b.jpeg?q=75",
+      "Description": "Which food should I feed my cows",
+      "likes": 0,
+      "comments": ["Napier Grass"]
     }
   ]
 }

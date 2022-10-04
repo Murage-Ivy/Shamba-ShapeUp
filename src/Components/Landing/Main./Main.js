@@ -5,6 +5,8 @@ import Posts from "../../Display/Posts";
 import PostForm from "../../Display/PostForm";
 
 function Main() {
+
+
   return (
     <div className="main">
       {/* Displays the navbar and main part in a flex box */}

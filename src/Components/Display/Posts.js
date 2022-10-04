@@ -1,10 +1,17 @@
-import React from "react";
-
+import React, { useState } from "react";
 function Posts() {
+ const[posts, setPosts] = useState([])
+
+  // useEffect(() => {
+  //   fetch(" http://localhost:4000/Animals")
+  //     .then((res) => res.json())
+  //     .then((data) => console.log(data));
+  // }, []);
   return (
     <div className="posts">
       <div className="post">
-        <img id="img"
+        <img
+          id="img"
           src={
             "https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80"
           }
