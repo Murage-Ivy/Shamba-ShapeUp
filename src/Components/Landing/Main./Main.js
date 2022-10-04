@@ -2,6 +2,7 @@ import React from "react";
 import "./Main.css";
 import Navside from "../../Display/NavSide";
 import Posts from "../../Display/Posts";
+import PostForm from "../../Display/PostForm";
 
 function Main() {
   return (
@@ -11,6 +12,7 @@ function Main() {
         <Navside />
         <Posts />
       </div>
+      <PostForm />
     </div>
   );
 }
