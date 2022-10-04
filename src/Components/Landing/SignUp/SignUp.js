@@ -12,10 +12,10 @@ function SignUp() {
     password: "1256890",
   });
 
-  // Post Request 
-  useEffect(() => {
-    fetch()
-  })
+  // // Post Request 
+  // useEffect(() => {
+  //   fetch()
+  // })
 
   function handleChange(event) {
     const name = event.target.name;
