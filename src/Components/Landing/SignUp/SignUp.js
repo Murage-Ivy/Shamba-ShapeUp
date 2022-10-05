@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./SignUp.css";
 import image from "./Images/countryside-woman-holding-plant-leaves.jpg";
 
@@ -33,6 +33,7 @@ function SignUp() {
       email: userInfo.email,
       telephone: userInfo.telephone,
       password: userInfo.password,
+      isLogged: false,
     };
     console.log("This is the submitted info", user);
 
@@ -46,7 +47,7 @@ function SignUp() {
       body: JSON.stringify(user),
     })
       .then((res) => res.json())
-      .then((data) => console.log(data))
+      .then((data) => console.log(data));
   }
 
   return (

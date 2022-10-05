@@ -14,14 +14,16 @@
       "email": "ivy.murage@student.moringaschool.com",
       "telephone": "0712345678",
       "password": "34567",
-      "id": 2
+      "id": 2,
+      "isLogged": true
     },
     {
-      "first_name": "Ivy",
-      "last_name": "Murage",
-      "email": "ivy.murage@student.moringaschool.com",
+      "first_name": "Elsy",
+      "last_name": "Kimani",
+      "email": "elsykimani@gmail.com",
       "telephone": "0712345678",
-      "password": "3456",
+      "password": "123456",
+      "isLogged": false,
       "id": 3
     }
   ],
