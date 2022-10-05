@@ -11,7 +11,7 @@ function PostForm() {
       <br />
       <textarea></textarea>
       <br />
-      <button type="submit">Add Post</button>
+      <button type="submit" id="post-btn">Add Post</button>
     </form>
   );
 }

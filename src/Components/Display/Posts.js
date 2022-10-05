@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 function Posts({ posts }) {
+  const [likes, setLikes] = useState(0);
   const postList = posts.map((post) => (
     <div key={post.id} className="post">
       <img src={post.image_url} alt={"farm"} />
       <p>{post.description}</p>
       <div className="action-btn">
-        <div id="like-btn">
+        <div  className={post.likes} onClick={onLikeClick}>
           <i className="fa-solid fa-heart"></i>
-          <span>0 likes</span>
+          <span >{post.likes} likes</span>
         </div>
         <div className="comment-btn">
           <i className="fa-regular fa-comment"></i>
@@ -17,30 +18,12 @@ function Posts({ posts }) {
     </div>
   ));
 
-  return (
-    <div className="posts">
-      {postList}
-      {/* <div className="post">
-        <img
-          id="img"
-          src={
-            "https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80"
-          }
-          alt="cow"
-        />
-        <p>Hello there</p>
-        <div className="action-btn">
-          <div id="like-btn">
-            <i className="fa-solid fa-heart"></i>
-            <span>0 likes</span>
-          </div>
-          <div className="comment-btn">
-            <i className="fa-regular fa-comment"></i>
-            <span>Comment</span>
-          </div>
-        </div>
-      </div> */}
-    </div>
-  );
+  function onLikeClick(event) {
+    const likes = parseInt((event.target.textContent).split(' ')[0])
+  console.log(likes++)
+   
+  }
+
+  return <div className="posts">{postList}</div>;
 }
 export default Posts;

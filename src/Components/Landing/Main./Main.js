@@ -11,12 +11,11 @@ function Main() {
     <div className="main">
       {/* Displays the navbar and main part in a flex box */}
       <PostForm />
-      <br/>
+      <br />
       <div className="nav-main">
         <Navside setPosts={setPosts} />
         <Posts posts={posts} />
       </div>
-      
     </div>
   );
 }
