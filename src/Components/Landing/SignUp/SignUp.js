@@ -3,21 +3,18 @@ import "./SignUp.css";
 import image from "./Images/countryside-woman-holding-plant-leaves.jpg";
 
 function SignUp() {
+  // sets the initail state of user info
   const [userInfo, setUserInfo] = useState({
-    id: 1,
-    first_name: "Sebastian",
-    last_name: "Eschweiler",
-    email: "sebastian@codingthesmartway.com",
-    telephone: "0718789056",
-    password: "1256890",
+    first_name: "",
+    last_name: "",
+    email: "",
+    telephone: "",
+    password: "",
   });
 
-  // // Post Request 
-  // useEffect(() => {
-  //   fetch()
-  // })
-
+  // updates the user state when user enters data in the input field
   function handleChange(event) {
+    event.preventDefault();
     const name = event.target.name;
     const value = event.target.value;
     setUserInfo({
@@ -25,6 +22,33 @@ function SignUp() {
       [name]: value,
     });
   }
+
+  // Function handles submit sign up form
+  function handleSubmit(event) {
+    event.preventDefault();
+    // create an object that holds user info
+    const user = {
+      first_name: userInfo.first_name,
+      last_name: userInfo.last_name,
+      email: userInfo.email,
+      telephone: userInfo.telephone,
+      password: userInfo.password,
+    };
+    console.log("This is the submitted info", user);
+
+    // Do a post request
+    fetch("http://localhost:4000/Farmers", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(user),
+    })
+      .then((res) => res.json())
+      .then((data) => console.log(data))
+  }
+
   return (
     <div className="signUp">
       <div className="signUp-text">
@@ -52,10 +76,9 @@ function SignUp() {
           </div>
         </div>
       </div>
-      <form className="form sign-up">
+      <form className="form sign-up" onSubmit={handleSubmit}>
         <label htmlFor="firstname"> First Name </label>
         <input
-
           type={"text"}
           name="first_name"
           id="first"
@@ -91,7 +114,6 @@ function SignUp() {
           value={userInfo.password}
           autoComplete={"current-password"}
           onChange={handleChange}
-
         />
         <button type="submit" id="signup-button">
           Sign Up
