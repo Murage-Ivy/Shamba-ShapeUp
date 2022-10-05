@@ -1,4 +1,4 @@
-/* Style the login div */
+/* ===Style the login div=== */
 #login {
   display: flex;
   justify-content: space-between;
@@ -8,7 +8,7 @@
   height: 100vh;
 }
 
-/* Style the login form */
+/*=== Style the login form ===*/
 .login {
   padding: 20px 25px 20px 25px;
   width: 50%;
@@ -18,7 +18,7 @@
   text-align: left;
 }
 
-/* Style of login-text */
+/* ===Style of login-text=== */
 .login-text {
   color: white;
   padding: 10px;
@@ -30,19 +30,19 @@
   margin-right: 20px;
   border-radius: 20px;
 }
-/* Style of login-text h2 */
+/* ===Style of login-text h2=== */
 .login-text > h2 {
   font-size: 2.5em;
 }
 
-/* Style of password login and email login */
+/* ===Style of password login and email login=== */
 #password-login,
 #email-login {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-/* Style of login button */
+/* ===Style of login button=== */
 #login-button {
   border-style: none;
   background-color: #1c6758;
@@ -58,18 +58,34 @@
   font-size: 1.2em;
   margin-top: 50px;
 }
-/* Add a hover effect */
+/* ===Add a hover effect=== */
 #login-button:hover {
   border: 2px solid #1c6758;
   background-color: transparent;
   color: black;
 }
 
-/* Style of signup label */
+/* ===Style of signup label=== */
 #signup {
   margin: 0 auto;
   text-decoration: underline;
   display: block;
   text-align: center;
   margin-top: 60px;
+}
+
+@media only screen and (max-width: 850px) {
+  #login {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .login {
+    padding: 20px 25px 20px 25px;
+    width: 80%;
+    height: 60%;
+    border-radius: 15px;
+    background-color: #eef2e6;
+    text-align: left;
+  }
 }
