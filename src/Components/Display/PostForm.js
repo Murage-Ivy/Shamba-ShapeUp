@@ -2,7 +2,7 @@ import React from "react";
 
 function PostForm() {
   return (
-    <form>
+    <form id="post-form">
       <label> Enter a image url </label>
       <br/>
       <input type={"text"} placeholder="Enter the image url" />

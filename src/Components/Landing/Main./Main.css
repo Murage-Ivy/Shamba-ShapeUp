@@ -1,6 +1,6 @@
 .main {
   position: relative;
-  background-color: #eef2e6;
+  background-color: #1c6758;
   height: 100vh;
 }
 .nav-main {
@@ -12,6 +12,10 @@
 #nav-bar {
   width: 20%;
   background-color:#eef2e6;
+  overflow: hidden; 
+  /* position: fixed;
+  top: 0;
+  left: 0; */
 }
 
 #nav-bar ul {
@@ -20,6 +24,7 @@
   justify-content: space-around;
   align-items: flex-end;
   height: 80%;
+
 }
 #nav-bar li {
   text-decoration: none;
@@ -47,6 +52,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  overflow: auto;
 }
 
 .post > #img {
@@ -60,4 +66,11 @@
 .action-btn {
   display: flex;
   justify-content: space-between;
+}
+
+/* Style of post-form */
+#post-form{
+  border: 1px solid red;
+  width: 50%;
+  
 }
