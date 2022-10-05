@@ -73,7 +73,7 @@
   text-align: center;
   margin-top: 60px;
 }
-
+/* ===MEDIA QUERY FOR 1024PX AND 850PX=== */
 @media only screen and (max-width: 850px) {
   #login {
     flex-direction: column;
@@ -87,5 +87,11 @@
     border-radius: 15px;
     background-color: #eef2e6;
     text-align: left;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #signup {
+    margin-top: 30px;
   }
 }
