@@ -1,3 +1,4 @@
+/* ====Header styling ====*/
 #header {
   height: 100vh;
   background-image: url("./Images/countryside-workers-together-field.jpg");
@@ -7,18 +8,6 @@
   position: relative;
 }
 
-#header::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  opacity: 0.2;
-  z-index: 1000;
-}
 /* ====Header section styling ====*/
 .header-section {
   position: absolute;
@@ -29,15 +18,22 @@
   color: white;
   text-align: center;
 }
+
+/* ====Header section styling h1 ====*/
 .header-section h1 {
   font-size: 4em;
 }
+
+/* ====Header section styling a element ====*/
 .header-section a {
   color: white;
   text-decoration: none;
   font-size: 15px;
+  cursor: pointer;
+  pointer-events: auto;
 }
-/* Button styling */
+
+/* ====Header section styling button styling ====*/
 #header-button {
   padding: 10px 20px 10px 20px;
   border-radius: 10px;
@@ -46,7 +42,26 @@
   color: white;
   font-size: 1.2em;
 }
-/* paragraph styling */
+
+/* ====Header section styling p element styling ====*/
 .header-section > p {
   margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  #header {
+    background-image: url("./Images/woman-hat-holding-funnel-works-garden.jpg");
+  }
+  .header-section {
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #header {
+    background-image: url("./Images/woman-hat-holding-funnel-works-garden.jpg");
+  }
+  .header-section {
+    left: 20%;
+  }
 }
