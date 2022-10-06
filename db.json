@@ -31,7 +31,7 @@
     {
       "id": 1,
       "image_url": "https://images.ctfassets.net/ww1ie0z745y7/4G2C16VwTanIGGrXJS3Wwj/8efa3e547c3ac97fd2705e61367d004f/4897377992_7df29b4d3c_b.jpeg?q=75",
-      "Description": "Which food should I feed my cows",
+      "description": "Which food should I feed my cows",
       "likes": 0,
       "comments": [
         "Napier Grass"
@@ -40,18 +40,24 @@
     {
       "id": 2,
       "image_url": "https://thehipchick.com/wp-content/uploads/2019/10/rooster-and-hens-in-the-garden-ee220716-1024x597.jpg.webp",
-      "Description": "Should I feed my chicken worms?",
+      "description": "Should I feed my chicken worms?",
       "likes": 30,
       "comments": [
         "yes, worms are healthy and it should be mixed with the food"
       ]
+    },
+    {
+      "image_url": "https://th-thumbnailer.cdn-si-edu.com/TENCgly4gZvzmIw_kmuBIyqypFg=/1072x720/filters:no_upscale()/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/0e/c2/0ec2924a-8fa2-463e-8d31-fbb4c11af322/14-fun-facts-about-chickens-3064-2298.jpg",
+      "description": "How old do chickens need to be to lay eggs, and how many eggs will they lay?",
+      "topic": "Animals",
+      "id": 3
     }
   ],
   "Vegetables": [
     {
       "id": 1,
       "image_url": "https://images.ctfassets.net/ww1ie0z745y7/4G2C16VwTanIGGrXJS3Wwj/8efa3e547c3ac97fd2705e61367d004f/4897377992_7df29b4d3c_b.jpeg?q=75",
-      "Description": "Which food should I feed my cows",
+      "description": "Which food should I feed my cows",
       "likes": 0,
       "comments": [
         "Napier Grass"
@@ -62,7 +68,7 @@
     {
       "id": 1,
       "image_url": "https://images.ctfassets.net/ww1ie0z745y7/4G2C16VwTanIGGrXJS3Wwj/8efa3e547c3ac97fd2705e61367d004f/4897377992_7df29b4d3c_b.jpeg?q=75",
-      "Description": "Which food should I feed my cows",
+      "description": "Which food should I feed my cows",
       "likes": 0,
       "comments": [
         "Napier Grass"
@@ -73,7 +79,7 @@
     {
       "id": 1,
       "image_url": "https://images.ctfassets.net/ww1ie0z745y7/4G2C16VwTanIGGrXJS3Wwj/8efa3e547c3ac97fd2705e61367d004f/4897377992_7df29b4d3c_b.jpeg?q=75",
-      "Description": "Which food should I feed my cows",
+      "description": "Which food should I feed my cows",
       "likes": 0,
       "comments": [
         "Napier Grass"
