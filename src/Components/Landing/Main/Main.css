@@ -9,13 +9,20 @@
   width: 100%;
   height: 100vh;
 }
+
+/* ===styles for the nav bar=== */
 #nav-bar {
   width: 20%;
   background-color: #eef2e6;
   overflow: hidden;
-  /* position: fixed;
+  position: fixed;
   top: 0;
-  left: 0; */
+  left: 0;
+  height: 100vh;
+}
+
+#nav-bar h2 {
+  color: #1c6758;
 }
 
 #nav-bar ul {
@@ -32,58 +39,74 @@
   display: block;
   margin: 0 auto;
   width: 100%;
+  cursor: pointer;
 }
+/* ===end of styles for the nav bar=== */
 
+/* ===start of styles for the posts section=== */
 .posts {
   width: 80%;
   background-color: #1c6758;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: block;
+  position: absolute;
+  right: 0;
+  height: 100vh;
+  scroll-behavior: smooth;
 }
 
 .post {
-  width: 30%;
+  width: 80%;
   height: 100%;
   margin: 0 auto;
   background-color: #eef2e6;
   border-radius: 15px;
   padding: 10px;
   margin-top: 20px;
-  height: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  overflow: scroll;
 }
 
 .post > img {
-  width: 100%;
+  max-width: 100%;
   border-radius: 10px;
   display: block;
+  margin: 0 auto;
+  height: auto;
 }
+/* ===end of styles for the posts section=== */
 
 /* Style of action buttons */
 
 .action-btn {
   display: flex;
   justify-content: space-between;
+  border: 1px solid red;
+  margin-top: 0;
 }
 
 /* Style of post-form */
 #post-form {
-  border: 1px solid red;
+  border: 1px solid #eef2e6;
   width: 50%;
   margin: 0 auto;
   margin-right: 150px;
-
+  background-color: #3d8361;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
 }
+
 #post-form > label {
   color: white;
 }
 
+/* style of textarea */
+textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+}
+
 #post-btn {
-  padding: 10px 35px 10px 35px;
+  padding: 10px 10px 10px 10px;
   width: 185px;
   height: 40px;
   border-radius: 8px;
@@ -93,4 +116,5 @@
   color: #1c6758;
   margin: 0 auto;
   display: block;
+  text-align: center;
 }
