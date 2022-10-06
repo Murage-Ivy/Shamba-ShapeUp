@@ -5,6 +5,7 @@ function PostForm({ setPosts }) {
     image_url: "",
     description: "",
     topic: "",
+
   });
 
   function handleChange(event) {
@@ -19,6 +20,8 @@ function PostForm({ setPosts }) {
       image_url: post.image_url,
       description: post.description,
       topic: post.topic,
+      likes:0,
+      comments:[]
     };
     fetch(`http://localhost:4000/${post.topic}`, {
       method: "POST",

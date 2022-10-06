@@ -62,6 +62,7 @@
   border-radius: 15px;
   padding: 10px;
   margin-top: 20px;
+  position: relative;
 }
 
 .post > img {
@@ -85,7 +86,7 @@
 /* Style of post-form */
 #post-form {
   border: 1px solid #eef2e6;
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   margin-right: 150px;
   background-color: #3d8361;
@@ -117,4 +118,25 @@ textarea {
   margin: 0 auto;
   display: block;
   text-align: center;
+}
+
+/* styles of comment form */
+#comment-form {
+  border: 1px solid #eef2e6;
+  width: 90%;
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  margin-top: 20px;
+}
+#comment-form > #comment-btn {
+  color: #eef2e6;
+  border-radius: 10px;
+  border-style: none;
+  background-color: #3d8361;
+  position: absolute;
+  right: 15%;
+  top: 48%;
+  cursor: pointer;
+ 
 }
