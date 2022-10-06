@@ -4,7 +4,6 @@ import "./Header.css";
 
 function Header() {
   /*=====Header Component=====*/
-
   return (
     <header id="header">
       <div className="header-section">

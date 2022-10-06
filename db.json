@@ -23,7 +23,7 @@
       "email": "elsykimani@gmail.com",
       "telephone": "0712345678",
       "password": "123456",
-      "isLogged": false,
+      "isLogged": true,
       "id": 3
     }
   ],
@@ -77,7 +77,7 @@
   "Comments": [
     {
       "id": 3,
-      "postId":3,
+      "postId": 3,
       "comment": "10 eggs are good for a start",
       "topic": "Animals"
     },
@@ -90,7 +90,7 @@
     {
       "comment": "Napier grass is good for 10months old cows",
       "postId": 1,
-      "topic":"Animals",
+      "topic": "Animals",
       "id": 5
     },
     {
@@ -98,6 +98,33 @@
       "topic": "Animals",
       "postId": 3,
       "id": 6
+    },
+    {
+      "comment": "Yes, I have been feeding my chickens the worms and they are very  nutritiurs",
+      "topic": "Animals",
+      "postId": 2,
+      "id": 7
+    },
+    {
+      "comment": "Salt is good for there health you should try it",
+      "postId": 1,
+      "id": 8
+    },
+    {
+      "comment": "Yes",
+      "topic": "Animals",
+      "postId": 2,
+      "id": 9
+    },
+    {
+      "comment": "My vet told me the best feed to give them is grass. coz it has a lot of nutrients",
+      "postId": 1,
+      "id": 10
+    },
+    {
+      "comment": "Cow powder is the best",
+      "postId": 1,
+      "id": 11
     }
   ]
 }

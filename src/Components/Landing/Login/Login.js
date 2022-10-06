@@ -2,16 +2,14 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Login.css";
 
-
-function Login() {
+function Login({ getLogStatus }) {
   const navigate = useNavigate();
   /* ===Sets initial state for react interanl== */
   const [loginInfo, setLoginInfo] = useState({
     email: "",
     password: "",
   });
-  const [loggedUser, setLoggedUser] = useState();
-  const [logged, setLogged] = useState(false);
+  const [loggedUser, setLoggedUser] = useState([]);
   /* ===Sets initial state for react interanl== */
 
   /* ===Checks if user's email is in the database and logs them in== */
@@ -19,16 +17,32 @@ function Login() {
     fetch("http://localhost:4000/Farmers")
       .then((res) => res.json())
       .then((data) => {
-        const user = checkEmail(data, loginInfo);
-        if (user) {
-          setLoggedUser(user);
-        }
+        setLoggedUser(() => [...data]);
       });
-  }, [loginInfo]);
-
+  }, []);
+  
+  /* ===Checks if user email is in the database=== */
   const checkEmail = (serverUsers, loginInfo) => {
     const user = serverUsers.find((user) => user.email === loginInfo.email);
-    if (user) return user;
+    if (user) {
+      fetch(`http://localhost:4000/Farmers/${user.id}`, {
+        method: "PATCH",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify({ isLogged: true }),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          getLogStatus(data.isLogged);
+          navigate("/main");
+          setLoginInfo({
+            email: "",
+            password: "",
+          });
+        })
+        .catch((error) => console.log(error));
+    }
   };
 
   /* ===Updates state when value changes=== */
@@ -43,26 +57,9 @@ function Login() {
 
   /* ===Handles submit login info=== */
   const handleSubmitLoginInfo = (event) => {
+    console.log(loggedUser);
     event.preventDefault();
-    fetch(`http://localhost:4000/Farmers/${loggedUser.id}`, {
-      method: "PATCH",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify({ isLogged: true }),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        setLogged((logged) => (logged = data.isLogged));
-        setLoginInfo({
-          email: "",
-          password: "",
-        });
-      })
-      .catch((error) => console.log(error));
-    if (logged) {
-      navigate("/main");
-    }
+    checkEmail(loggedUser, loginInfo);
   };
 
   return (

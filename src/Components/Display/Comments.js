@@ -1,21 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 
-function Comments({ postId, getCommentById, postcomments }) {
-  console.log(postId);
-  useEffect(() => {
-    const abortController = new AbortController();
-    fetch(` http://localhost:4000/Comments/${postId}`)
-      .then((res) => res.json())
-      .then((data) => {
-        getCommentById(data);
-      });
+function Comments({ postId, postcomments }) {
 
-    return () => {
-      abortController.abort();
-    };
-  }, []);
+  const postComment = postcomments.filter((comment) => comment.postId === postId)
 
-  const commentList = postcomments.map((comment, index) => (
+
+  const commentList = postComment.map((comment, index) => (
     <span key={index}> {comment.comment} </span>
   ));
 

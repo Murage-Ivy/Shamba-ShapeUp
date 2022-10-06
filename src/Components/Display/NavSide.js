@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Topics from "../../Data";
-function Navside({ setPosts }) {
+function Navside({ setPosts, setLogged}) {
+  const navigate = useNavigate();
   // sets up the initial state of the Navside components
   const [topic, setTopic] = useState("Animals");
 
@@ -30,10 +32,18 @@ function Navside({ setPosts }) {
     };
   }, [topic, setPosts]);
 
+  function logUserOut() {
+    setLogged(prevLogged => !prevLogged);
+    navigate("/login");
+  }
+
   return (
     <nav id="nav-bar">
       <h2>Topics</h2>
       <ul>{topicsList}</ul>
+      <button className="logout-btn" onClick={logUserOut}>
+        Log Out
+      </button>
     </nav>
   );
 }

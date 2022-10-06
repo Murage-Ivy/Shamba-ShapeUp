@@ -1,25 +1,29 @@
-import React, { useCallback } from "react";
+import React from "react";
 import CommentForm from "./CommentForm";
 import Comments from "./Comments";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 function Posts({ posts }) {
- 
   // const [likes, setLikes] = useState(0);
-
 
   const [postcomments, setPostComments] = useState([]);
 
-  
-  function getCommentById(comments) {
-    const commentarray = [];
-    commentarray.push(comments);
-    setPostComments(commentarray)
-  }
-  
   function onSubmitComment(comment) {
-    console.log(comment)
+    console.log(comment);
+    setPostComments([...postcomments, comment]);
   }
 
+  useEffect(() => {
+    const abortController = new AbortController();
+    fetch(`http://localhost:4000/Comments`)
+      .then((res) => res.json())
+      .then((data) => {
+        setPostComments([...data]);
+      });
+
+    return () => {
+      abortController.abort();
+    };
+  }, []);
 
   const postList = posts.map((post) => (
     <div key={post.id} className="post">
@@ -35,15 +39,17 @@ function Posts({ posts }) {
           <span>Comment</span>
         </div>
       </div>
-      <Comments postId={post.id} getCommentById={getCommentById} postcomments={postcomments} />
-      <CommentForm postId={post.id} topic={post.topic} onSubmitComment={onSubmitComment} />
+      <Comments
+        postId={post.id}
+        postcomments={postcomments}
+      />
+      <CommentForm
+        postId={post.id}
+        topic={post.topic}
+        onSubmitComment={onSubmitComment}
+      />
     </div>
   ));
-
-  // function onLikeClick(event) {
-  //   const likes = parseInt(event.target.textContent.split(" ")[0]);
-  //   console.log(likes++);
-  // }
 
   return <div className="posts">{postList}</div>;
 }
