@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useCallback } from "react";
 import CommentForm from "./CommentForm";
 import Comments from "./Comments";
+import { useState } from "react";
 function Posts({ posts }) {
+ 
   // const [likes, setLikes] = useState(0);
 
-  // function onSubmitComment(comment) {
-  //   fetch(`http://localhost:4000`)
-  // }
+
+  const [postcomments, setPostComments] = useState([]);
+
+  
+  function getCommentById(comments) {
+    const commentarray = [];
+    commentarray.push(comments);
+    setPostComments(commentarray)
+  }
+  
+  function onSubmitComment(comment) {
+    console.log(comment)
+  }
+
 
   const postList = posts.map((post) => (
     <div key={post.id} className="post">
@@ -22,8 +35,8 @@ function Posts({ posts }) {
           <span>Comment</span>
         </div>
       </div>
-      <Comments postId={post.id}  />
-      <CommentForm postId={post.id} topic={post.topic} />
+      <Comments postId={post.id} getCommentById={getCommentById} postcomments={postcomments} />
+      <CommentForm postId={post.id} topic={post.topic} onSubmitComment={onSubmitComment} />
     </div>
   ));
 

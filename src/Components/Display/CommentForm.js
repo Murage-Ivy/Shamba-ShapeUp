@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function CommentForm({ postId, topic }) {
+function CommentForm({ postId, topic, onSubmitComment }) {
   const [comment, setComment] = useState("");
 
   function handleChange(event) {
@@ -15,11 +15,13 @@ function CommentForm({ postId, topic }) {
       body: JSON.stringify({
         comment: comment,
         topic: topic,
-        postId: postId
+        postId: postId,
       }),
     })
       .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then((data) => onSubmitComment(data));
+
+    setComment("");
   }
   return (
     <form id="comment-form" onSubmit={handleSubmit}>

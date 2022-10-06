@@ -77,8 +77,27 @@
   "Comments": [
     {
       "id": 3,
+      "postId":3,
       "comment": "10 eggs are good for a start",
       "topic": "Animals"
+    },
+    {
+      "comment": "Yes they are very healthy",
+      "topic": "Animals",
+      "postId": 2,
+      "id": 4
+    },
+    {
+      "comment": "Napier grass is good for 10months old cows",
+      "postId": 1,
+      "topic":"Animals",
+      "id": 5
+    },
+    {
+      "comment": "15months",
+      "topic": "Animals",
+      "postId": 3,
+      "id": 6
     }
   ]
 }

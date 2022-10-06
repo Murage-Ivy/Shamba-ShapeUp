@@ -1,14 +1,19 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
-function Comments({ postId }) {
-  const [postcomments, setPostComments] = useState([]);
+function Comments({ postId, getCommentById, postcomments }) {
+  console.log(postId);
   useEffect(() => {
+    const abortController = new AbortController();
     fetch(` http://localhost:4000/Comments/${postId}`)
       .then((res) => res.json())
-      .then((data) => setPostComments([ data]));
-  }, [postId]);
+      .then((data) => {
+        getCommentById(data);
+      });
 
-  console.log(postcomments);
+    return () => {
+      abortController.abort();
+    };
+  }, []);
 
   const commentList = postcomments.map((comment, index) => (
     <span key={index}> {comment.comment} </span>
