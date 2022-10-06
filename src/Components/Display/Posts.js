@@ -42,6 +42,7 @@ function Posts({ posts }) {
       <Comments
         postId={post.id}
         postcomments={postcomments}
+        topic={post.topic}
       />
       <CommentForm
         postId={post.id}

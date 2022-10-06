@@ -25,6 +25,15 @@
       "password": "123456",
       "isLogged": true,
       "id": 3
+    },
+    {
+      "first_name": "Kamau",
+      "last_name": "Njinji",
+      "email": "kamau@gmail.com",
+      "telephone": "0712345678",
+      "password": "12363328",
+      "isLogged": true,
+      "id": 4
     }
   ],
   "Animals": [
@@ -60,10 +69,12 @@
   ],
   "Fruits": [
     {
-      "id": 1,
-      "image_url": "https://images.ctfassets.net/ww1ie0z745y7/4G2C16VwTanIGGrXJS3Wwj/8efa3e547c3ac97fd2705e61367d004f/4897377992_7df29b4d3c_b.jpeg?q=75",
-      "description": "Which food should I feed my cows",
-      "likes": 0
+      "image_url": "https://www.agric.wa.gov.au/sites/gateway/files/styles/page_featured_image/public/Red%20Scale%20damage%20fruit.jpg?itok=FiTPiPOV&c=c94daee7a3f81a417a2220bc4c105c23",
+      "description": "Does anyone know why my citrus fruits have these spots",
+      "topic": "Fruits",
+      "likes": 0,
+      "comments": [],
+      "id": 2
     }
   ],
   "Fertilizers": [
@@ -125,6 +136,12 @@
       "comment": "Cow powder is the best",
       "postId": 1,
       "id": 11
+    },
+    {
+      "comment": "Yes,This could be because they have been infested by pests",
+      "topic": "Fruits",
+      "postId": 2,
+      "id": 12
     }
   ]
 }

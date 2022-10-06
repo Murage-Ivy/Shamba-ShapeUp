@@ -1,8 +1,8 @@
 import React from "react";
 
-function Comments({ postId, postcomments }) {
+function Comments({ postId, postcomments,topic}) {
 
-  const postComment = postcomments.filter((comment) => comment.postId === postId)
+  const postComment = postcomments.filter((comment) => comment.postId === postId).filter(comment => comment.topic === topic);
 
 
   const commentList = postComment.map((comment, index) => (

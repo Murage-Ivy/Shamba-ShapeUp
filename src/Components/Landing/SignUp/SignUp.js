@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "./SignUp.css";
 import image from "./Images/countryside-woman-holding-plant-leaves.jpg";
+import { useNavigate } from "react-router-dom";
 
 function SignUp() {
+  const navigate = useNavigate();
   // sets the initail state of user info
   const [userInfo, setUserInfo] = useState({
     first_name: "",
@@ -47,7 +49,10 @@ function SignUp() {
       body: JSON.stringify(user),
     })
       .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then((data) => {
+        console.log(data);
+        navigate("/login");
+      });
   }
 
   return (
