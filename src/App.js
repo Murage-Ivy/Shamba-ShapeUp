@@ -11,6 +11,8 @@ function App() {
   function getLogStatus(logStatus) {
     setLogged(logStatus);
   }
+
+  // const [errors, setErrors] = useState([]);
   return (
     <div className="container">
       <Routes>
@@ -21,8 +23,12 @@ function App() {
           element={<Main logged={logged} setLogged={setLogged} />}
         />
         <Route path="/main/:id" element={<Main />} />
-        <Route path="/login" element={<Login getLogStatus={getLogStatus} />} />
+        <Route
+          path="/login"
+          element={<Login getLogStatus={getLogStatus} logged={logged} />}
+        />
       </Routes>
+
       <br />
     </div>
   );

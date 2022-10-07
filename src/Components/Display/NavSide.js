@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Topics from "../../Data";
-function Navside({ setPosts, setLogged}) {
+function Navside({ setPosts, setLogged }) {
   const navigate = useNavigate();
   // sets up the initial state of the Navside components
   const [topic, setTopic] = useState("Animals");
@@ -12,13 +12,13 @@ function Navside({ setPosts, setLogged}) {
       {topic}
     </li>
   ));
-
+  // updates state when a topic is updated
   function handleTopicClick(event) {
     const farmTopic = event.target.className;
     setTopic(farmTopic);
   }
 
-  // useEffect should be called when the user loads the page and state changes accordingly
+  // useEffect should be called when the user loads the page and state changes accordingly and posts of a specific farm topic are loaded
   useEffect(() => {
     const abortController = new AbortController();
     fetch(`http://localhost:4000/${topic}`)
@@ -32,8 +32,9 @@ function Navside({ setPosts, setLogged}) {
     };
   }, [topic, setPosts]);
 
+  // when a the log out button is clicked function os called to log out the user
   function logUserOut() {
-    setLogged(prevLogged => !prevLogged);
+    setLogged((prevLogged) => (prevLogged = !prevLogged));
     navigate("/login");
   }
 

@@ -6,7 +6,8 @@
       "last_name": "Eschweiler",
       "email": "sebastian@codingthesmartway.com",
       "telephone": "0718789056",
-      "password": "1256890"
+      "password": "1256890",
+      "isLogged": false
     },
     {
       "first_name": "Ivy",
@@ -34,6 +35,15 @@
       "password": "12363328",
       "isLogged": true,
       "id": 4
+    },
+    {
+      "first_name": "Ivy",
+      "last_name": "Kimani",
+      "email": "ivymurage@gmail.com",
+      "telephone": "0712345678",
+      "password": "35467",
+      "isLogged": false,
+      "id": 5
     }
   ],
   "Animals": [
@@ -56,6 +66,14 @@
       "topic": "Animals",
       "likes": 30,
       "id": 3
+    },
+    {
+      "image_url": "https://th-thumbnailer.cdn-si-edu.com/TENCgly4gZvzmIw_kmuBIyqypFg=/1072x720/filters:no_upscale()/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/0e/c2/0ec2924a-8fa2-463e-8d31-fbb4c11af322/14-fun-facts-about-chickens-3064-2298.jpg",
+      "description": "Wowo",
+      "topic": "Animals",
+      "likes": 0,
+      "comments": [],
+      "id": 4
     }
   ],
   "Vegetables": [
@@ -142,6 +160,12 @@
       "topic": "Fruits",
       "postId": 2,
       "id": 12
+    },
+    {
+      "comment": "I like this",
+      "topic": "Animals",
+      "postId": 4,
+      "id": 13
     }
   ]
 }

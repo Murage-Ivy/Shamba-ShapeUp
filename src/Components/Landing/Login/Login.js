@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Login.css";
 
-function Login({ getLogStatus }) {
+function Login({ getLogStatus, logged }) {
   const navigate = useNavigate();
   /* ===Sets initial state for react interanl== */
   const [loginInfo, setLoginInfo] = useState({
@@ -10,6 +10,7 @@ function Login({ getLogStatus }) {
     password: "",
   });
   const [loggedUser, setLoggedUser] = useState([]);
+  const [errors, setErrors] = useState([]);
   /* ===Sets initial state for react interanl== */
 
   /* ===Checks if user's email is in the database and logs them in== */
@@ -18,9 +19,12 @@ function Login({ getLogStatus }) {
       .then((res) => res.json())
       .then((data) => {
         setLoggedUser(() => [...data]);
+      })
+      .catch((err) => {
+        alert("Error: " + err.message);
       });
   }, []);
-  
+
   /* ===Checks if user email is in the database=== */
   const checkEmail = (serverUsers, loginInfo) => {
     const user = serverUsers.find((user) => user.email === loginInfo.email);
@@ -30,18 +34,23 @@ function Login({ getLogStatus }) {
         headers: {
           "content-type": "application/json",
         },
-        body: JSON.stringify({ isLogged: true }),
+        body: JSON.stringify({ isLogged: logged }),
       })
         .then((res) => res.json())
         .then((data) => {
           getLogStatus(data.isLogged);
+          alert(`Success! User ${user.email} has successfully signed in!`);
           navigate("/main");
           setLoginInfo({
             email: "",
             password: "",
           });
+          setErrors([]);
         })
-        .catch((error) => console.log(error));
+        .catch((err) => {
+          setErrors(() => [...err.message]);
+          alert("Error: " + errors);
+        });
     }
   };
 
