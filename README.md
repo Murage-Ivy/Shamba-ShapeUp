@@ -40,12 +40,14 @@ Shamba Shape up is a social newtorking service that it meant to connect farmers.
 * Fork the repo and clone it on your machine using  the following command in your terminal:
   `git clone [<path to  repo>](https://github.com/Murage-Ivy/Shamba-ShapeUp)`
 * Navgiate to the cloned repo
-  `cd <path to  repo>`
+  `cd /Shamba-ShapeUp` 
 *  Open the cloned repo on your visual studio by using this command:
   ` code . `
-*  
-Clone the repository
-git clone git@github.com:WMCharles/React-Blog.git
+*  Install dependecies
+  `npm install`
+* Install react-router-dom
+  `npm i react-router-dom`
+
  
 Install dependecies
 npm install
