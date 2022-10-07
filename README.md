@@ -1,13 +1,17 @@
-# Shamba-ShapeUp# NFT-Project
+# Shamba-ShapeUp
 
 # Table of Contents
 
 1. [NEFTE CLUB](#nefte-club)
-2. [Demo](#demo)
+2. [Project Features](#project-features)
 3. [Objective of the project](#Objectives)
-4. [Usage](#usage)
-5. [Technologies](#techologies)
-6. [Installation](#installation)
+4. [Technologies](#techologies)
+5. [Installation](#installation)
+6. [Contributions](#contributions)
+7. [Author](#author)
+8. [Bugs $ Feature Request](#bugs)
+
+
 # Shamba Shape Up
 #### Brief description of application
 Shamba Shape up is a social newtorking service that it meant to connect farmers. Farmers can post their problems in their farms and also comment on the pots. The project implements different concepts in react. These include React Router Dom, Controlled Componenents, React Forms, Lists and Keys, React Filtering, and Hooks. useState, useEffect, useNavigate, and  are some of the Hooks used in these project. The project also uses React Fetch API to fetch data from json-server.
