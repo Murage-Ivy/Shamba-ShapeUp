@@ -23,19 +23,18 @@ Shamba Shape up is a social newtorking service that it meant to connect farmers.
 * Posts Page - Displayes all the posts and associated comments
 
 
-#### Date of current version 
-7/10/2022
-
-
-#### By 
-Ivy Wambui Murage
-
 ## Objective of the project
 * Logs in user to the posts page when there credentials are verified
 * Signs up user to enable the use the application
 * User can post questions on the posts page
 * User can comment on a particular post
 * User are logged out when they click the log out button
+
+
+### Technologies Used
+* React - it was used to design, structure and add content to the web pages
+* CSS - it was used to styling our the pages
+* Json - it was used to create the backend part of the application
 
 ##
 ### Built With
@@ -68,6 +67,12 @@ The following website used a mock up .json database. As a result for it to be fu
 on your local machine and run the server. 
 You will also  need to fork and clone the repo on your local machine
 
+#### Date of current version 
+7/10/2022
+
+
+#### By 
+Ivy Wambui Murage
 ## Technologies Used
 * Html
 * Css
