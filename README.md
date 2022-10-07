@@ -4,7 +4,7 @@
 
 1. [Introduction](#shamba-shape-up)
 2. [Project Features](#project-features)
-3. [Objective of the project](#objectives-of-the-project)
+3. [Objectives of the project](#objectives-of-the-project)
 4. [Technologies](#technologies-used)
 5. [Installation](#installation)
 6. [Contributions](#contributions)
@@ -35,6 +35,29 @@ Shamba Shape up is a social newtorking service that it meant to connect farmers.
 * React - it was used to design, structure and add content to the web pages
 * CSS - it was used to styling our the pages
 * Json - it was used to create the backend part of the application
+
+## Installation
+* Fork the repo and clone it on your machine using  the following command in your terminal:
+  `git clone [<path to  repo>](https://github.com/Murage-Ivy/Shamba-ShapeUp)`
+* Navgiate to the cloned repo
+  `cd <path to  repo>`
+*  Open the cloned repo on your visual studio by using this command:
+  ` code . `
+*  
+Clone the repository
+git clone git@github.com:WMCharles/React-Blog.git
+ 
+Install dependecies
+npm install
+ 
+Install react-router-dom
+npm i react-router-dom
+ 
+Run server
+npm run server
+ 
+Start project
+npm start
 
 ##
 ### Built With
