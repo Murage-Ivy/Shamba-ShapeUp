@@ -61,11 +61,17 @@ Shamba Shape up is a social newtorking service that it meant to connect farmers.
 
 
 ## Contributions
-Fork this repository.
-Create a branch: git checkout -b <branch_name>.
-Make your changes and commit them: git commit -m '<commit_message>'
-Push to the original branch: git push origin <project_name>/<location>
-Create the pull request.
+* Fork this repository.
+* Create a branch: 
+  <br/>
+  `git checkout -b <branch_name>.`
+* Make your changes and commit them: 
+  <br/>
+  `git commit -m '<commit_message>`
+* Push to the original branch: 
+  <br/>
+  `git push origin <project_name>/<location>`
+* Create the pull request.
 
 
  
