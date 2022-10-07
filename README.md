@@ -4,8 +4,8 @@
 
 1. [Introduction](#shamba-shape-up)
 2. [Project Features](#project-features)
-3. [Objective of the project](#Objectives)
-4. [Technologies](#techologies)
+3. [Objective of the project](#Objectives-of-the-project)
+4. [Technologies](#techologies-used)
 5. [Installation](#installation)
 6. [Contributions](#contributions)
 7. [Author](#author)
