@@ -23,16 +23,20 @@ Shamba Shape up is a social newtorking service that it meant to connect farmers.
 * Posts Page - Displayes all the posts and associated comments
 
 
-
 #### Date of current version 
 7/10/2022
 
 
 #### By 
 Ivy Wambui Murage
+
 ## Objective of the project
-* Inform people about Nefte Club
-* Showcase ways people use NFTS to a means to store data about their arts (NFTS are represented as pictures)
+* Logs in user to the posts page when there credentials are verified
+* Signs up user to enable the use the application
+* User can post questions on the posts page
+* User can comment on a particular post
+* User are logged out when they click the log out button
+
 ##
 ### Built With
 Html , Css  and Javascript
