@@ -72,48 +72,27 @@ Shamba Shape up is a social newtorking service that it meant to connect farmers.
   <br/>
   `git push origin <project_name>/<location>`
 * Create the pull request.
-
+ 
+ Alternatively see the GitHub documentation on creating a pull request 
+[creating a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
 
  
 
 
 
 
-### SetUp for ubuntu users
-* Fork this repo
-* On your git bash terminal
-  `git clone <path to  repo>`
-* Navigate to the cloned repo
-* Open the cloned repo on your visual studio by using this command:
-` code . `
-* Run ` npm install -g json-server` to install the json server since the project runs on a json server
-*Open the index.html using the live server to view the end product of the website.
-* Make changes or debug.
-## Known Bugs
-### Database Hosting
-The following website used a mock up .json database. As a result for it to be fully functional you will need to install json-server
-on your local machine and run the server. 
-You will also  need to fork and clone the repo on your local machine
 
 #### Date of current version 
 7/10/2022
 
 
-#### By 
+#### Author
 Ivy Wambui Murage
-## Technologies Used
-* Html
-* Css
-* Javascript
-## Support and contact details
-If you ran into any issue or want to contribute contact me via:  
-Github: [*@Github*](https://github.com/Murage-Ivy )   
-LinkedIn: [*@LinkedIn*](https://www.linkedin.com/in/ivy-murage-158736196/ )   
 
-
-### License  
+#### License  
 MIT
 Copyright (c) 2022 **Ivy Murage**
+
 ### Acknowledgments
 * Moringa School
   
