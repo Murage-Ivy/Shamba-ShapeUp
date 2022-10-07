@@ -9,7 +9,7 @@
 5. [Installation](#installation)
 6. [Contributions](#contributions)
 7. [Author](#author)
-8. [Bugs & Feature Request](#bugs-&-feature-request)
+8. [Bugs & Feature Request](#bugs-feature-request)
 
 
 # Shamba Shape Up
