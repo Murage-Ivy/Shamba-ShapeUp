@@ -34,11 +34,14 @@ function Login({ getLogStatus, logged }) {
         headers: {
           "content-type": "application/json",
         },
-        body: JSON.stringify({ isLogged: logged }),
+        body: JSON.stringify({ isLogged: true }),
       })
         .then((res) => res.json())
         .then((data) => {
           getLogStatus(data.isLogged);
+          // store the user in localStorage
+          localStorage.setItem("isLoggedIn", true);
+          console.log(data);
           alert(`Success! User ${user.email} has successfully signed in!`);
           navigate("/main");
           setLoginInfo({

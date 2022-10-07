@@ -10,13 +10,16 @@ function App() {
   const [logged, setLogged] = useState(false);
   function getLogStatus(logStatus) {
     setLogged(logStatus);
+    console.log("This is the status when user loggs in", logStatus);
   }
+  const isLogged = localStorage.getItem("isLoggedIn");
+  console.log("This is the status when user logs out", logged);
 
   // const [errors, setErrors] = useState([]);
   return (
     <div className="container">
       <Routes>
-        <Route path="/" element={<Header />} />
+        <Route path="/" element={isLogged ? <Main /> : <Header />} />
         <Route path="/signup" element={<SignUp />} />
         <Route
           path="/main"

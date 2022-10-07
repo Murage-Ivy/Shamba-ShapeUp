@@ -36,6 +36,7 @@ function Navside({ setPosts, setLogged }) {
   function logUserOut() {
     setLogged((prevLogged) => (prevLogged = !prevLogged));
     navigate("/login");
+    localStorage.removeItem("isLoggedIn");
   }
 
   return (
