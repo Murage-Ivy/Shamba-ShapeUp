@@ -60,22 +60,17 @@ Shamba Shape up is a social newtorking service that it meant to connect farmers.
   `npm start`
 
 
+## Contributions
+Fork this repository.
+Create a branch: git checkout -b <branch_name>.
+Make your changes and commit them: git commit -m '<commit_message>'
+Push to the original branch: git push origin <project_name>/<location>
+Create the pull request.
+
+
  
 
 
-##
-### Built With
-Html , Css  and Javascript
-#### Prequisites 
-A web browser preferable chrome
-#### Usage
-Open your index.html on your web browser
-## Setup/Installation Requirements
-To Contribute this project fix a bug or improve it:
-### Prequisites /  Installation Requirements
-* Download Visual Studio
-Visual Studio preferrebly the latest version-  
-[ Visual Studio Download](https://code.visualstudio.com/download)
 
 
 ### SetUp for ubuntu users
