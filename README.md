@@ -31,7 +31,7 @@ Shamba Shape up is a social newtorking service that it meant to connect farmers.
 * User are logged out when they click the log out button
 
 
-### Technologies Used
+## Technologies Used
 * React - it was used to design, structure and add content to the web pages
 * CSS - it was used to styling our the pages
 * Json - it was used to create the backend part of the application
