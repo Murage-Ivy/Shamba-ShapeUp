@@ -37,7 +37,8 @@ Shamba Shape up is a social newtorking service that it meant to connect farmers.
 * Json - it was used to create the backend part of the application
 
 ## Installation
-* Fork the repo and clone it on your machine using  the following command in your terminal:__
+* Fork the repo and clone it on your machine using  the following command in your terminal:
+  <br/> 
   `git clone [<path to  repo>](https://github.com/Murage-Ivy/Shamba-ShapeUp)`
 * Navgiate to the cloned repo__
   `cd /Shamba-ShapeUp` 
