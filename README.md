@@ -78,7 +78,7 @@ Shamba Shape up is a social newtorking service that it meant to connect farmers.
 
  
 ## Bugs & Fixes / Feature request
-In case you find a bug, kindly open an issue [here]. Include your query and your expected results.
+In case you find a bug, kindly open an issue [here](https://github.com/Murage-Ivy/Shamba-ShapeUp/issues/new). Include your query and your expected results.
 
 ## Date of current version 
 7/10/2022
