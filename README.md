@@ -73,26 +73,24 @@ Shamba Shape up is a social newtorking service that it meant to connect farmers.
   `git push origin <project_name>/<location>`
 * Create the pull request.
  
- Alternatively see the GitHub documentation on creating a pull request 
+  Alternatively see the GitHub documentation on creating a pull request 
 [creating a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
 
  
+## Bugs & Fixes / Feature request
+In case you find a bug, kindly open an issue [here]. Include your query and your expected results.
 
-
-
-
-
-#### Date of current version 
+## Date of current version 
 7/10/2022
 
 
-#### Author
+## Author
 Ivy Wambui Murage
 
-#### License  
+## License  
 MIT
 Copyright (c) 2022 **Ivy Murage**
 
-### Acknowledgments
+## Acknowledgments
 * Moringa School
   
