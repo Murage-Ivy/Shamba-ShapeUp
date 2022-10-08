@@ -9,7 +9,7 @@ function CommentForm({ postId, topic, onSubmitComment }) {
 
   function handleSubmit(event) {
     event.preventDefault();
-    fetch(`http://localhost:4000/comments`, {
+    fetch(`https://shamba-shape-up-data.herokuapp.com/comments`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
