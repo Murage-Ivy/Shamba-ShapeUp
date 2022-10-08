@@ -15,7 +15,7 @@ function Login({ getLogStatus, logged }) {
 
   /* ===Checks if user's email is in the database and logs them in== */
   useEffect(() => {
-    fetch("http://localhost:4000/Farmers")
+    fetch("https://shamba-shape-up-data.herokuapp.com/users")
       .then((res) => res.json())
       .then((data) => {
         setLoggedUser(() => [...data]);
@@ -29,7 +29,7 @@ function Login({ getLogStatus, logged }) {
   const checkEmail = (serverUsers, loginInfo) => {
     const user = serverUsers.find((user) => user.email === loginInfo.email);
     if (user) {
-      fetch(`http://localhost:4000/Farmers/${user.id}`, {
+      fetch(`https://shamba-shape-up-data.herokuapp.com/users/${user.id}`, {
         method: "PATCH",
         headers: {
           "content-type": "application/json",

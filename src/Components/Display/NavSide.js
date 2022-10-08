@@ -21,7 +21,7 @@ function Navside({ setPosts, setLogged }) {
   // useEffect should be called when the user loads the page and state changes accordingly and posts of a specific farm topic are loaded
   useEffect(() => {
     const abortController = new AbortController();
-    fetch(`http://localhost:4000/${topic}`)
+    fetch(`https://shamba-shape-up-data.herokuapp.com/${topic}`)
       .then((res) => res.json())
       .then((data) => setPosts((prevData) => (prevData = data)))
       .catch((error) => console.log(error));

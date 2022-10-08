@@ -14,7 +14,7 @@ function Posts({ posts }) {
 
   useEffect(() => {
     const abortController = new AbortController();
-    fetch(`http://localhost:4000/Comments`)
+    fetch(`https://shamba-shape-up-data.herokuapp.com/comments`)
       .then((res) => res.json())
       .then((data) => {
         setPostComments([...data]);

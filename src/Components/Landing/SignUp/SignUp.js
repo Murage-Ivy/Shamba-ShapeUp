@@ -40,7 +40,7 @@ function SignUp() {
     console.log("This is the submitted info", user);
 
     // Do a post request
-    fetch("http://localhost:4000/Farmers", {
+    fetch("https://shamba-shape-up-data.herokuapp.com/users", {
       method: "POST",
       headers: {
         Accept: "application/json",

@@ -22,7 +22,7 @@ function PostForm({ setPosts }) {
       likes: 0,
       comments: [],
     };
-    fetch(`http://localhost:4000/${post.topic}`, {
+    fetch(`https://shamba-shape-up-data.herokuapp.com/${post.topic}`, {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(userPost),
