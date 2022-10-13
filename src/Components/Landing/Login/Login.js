@@ -1,8 +1,8 @@
-import React, { useContext, useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import "./Login.css";
 import { LoginContext } from "./LoginContext";
-function Login({ getLogStatus, logged }) {
+function Login() {
   const{loginInfo, handleLoginInfo, handleSubmitLoginInfo} = useContext(LoginContext);
   // const navigate = useNavigate();
   // /* ===Sets initial state for react interanl== */

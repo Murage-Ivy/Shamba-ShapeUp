@@ -6,15 +6,15 @@ function Posts({ posts }) {
   // const [likes, setLikes] = useState(0);
 
   const [postcomments, setPostComments] = useState([]);
-  const [likes, setLikes] = useState(0);
+  // const [likes, setLikes] = useState(0);
 
-  function handleChange(event) {
-    console.log("I liked this post")
-  }
+  // function handleChange(event) {
+  //   console.log("I liked this post")
+  // }
 
-  const onDeletePost = () => {
-    console.log("This post has been deleted")
-  }
+  // const onDeletePost = () => {
+  //   console.log("This post has been deleted")
+  // }
 
   function onSubmitComment(comment) {
     console.log(comment);
