@@ -34,7 +34,7 @@ function Navside({ setPosts, setLogged }) {
 
   // when a the log out button is clicked function os called to log out the user
   function logUserOut() {
-    setLogged((prevLogged) => prevLogged = false);
+    // setLogged((prevLogged) => prevLogged = false);
     navigate("/login");
     localStorage.removeItem("isLoggedIn");
   }
