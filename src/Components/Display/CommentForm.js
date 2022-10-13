@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faPaperPlane} from '@fortawesome/free-solid-svg-icons';
 function CommentForm({ postId, topic, onSubmitComment }) {
   const [comment, setComment] = useState("");
 
@@ -32,8 +33,9 @@ function CommentForm({ postId, topic, onSubmitComment }) {
         onChange={handleChange}
       />
       <button typeof="submit" id="comment-btn">
-        Comment
+      <FontAwesomeIcon icon={faPaperPlane} id={"comment-btn"}  />
       </button>
+    
     </form>
   );
 }

@@ -12,6 +12,10 @@ function Posts({ posts }) {
     console.log("I liked this post")
   }
 
+  const onDeletePost = () => {
+    console.log("This post has been deleted")
+  }
+
   function onSubmitComment(comment) {
     console.log(comment);
     setPostComments([...postcomments, comment]);
@@ -32,6 +36,7 @@ function Posts({ posts }) {
 
   const postList = posts.map((post) => (
     <div key={post.id} className="post">
+      <i className="fa-solid fa-trash"></i>
       <img src={post.image_url} alt={"farm"} />
       <p>{post.description}</p>
       <div className="action-btn">

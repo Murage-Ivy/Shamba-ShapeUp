@@ -131,12 +131,12 @@ textarea {
 }
 #comment-form > #comment-btn {
   color: #eef2e6;
-  border-radius: 10px;
+  border-radius: 100%;
   border-style: none;
   background-color: #3d8361;
   position: absolute;
-  right: 15%;
-  top: 48%;
+  right: 16.5%;
+  top: 30%;
   cursor: pointer;
 }
 
@@ -162,4 +162,12 @@ textarea {
   cursor: pointer;
   position: absolute;
   right: 0;
+}
+
+/* Delete button style */
+.fa-trash {
+  color: #1c6758;
+  text-align: right;
+  display: block;
+  padding: 10px 20px;
 }

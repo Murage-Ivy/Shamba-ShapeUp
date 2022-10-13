@@ -5,6 +5,7 @@ import Header from "./Components/Landing/Header/Header";
 import Login from "./Components/Landing/Login/Login";
 import Main from "./Components/Landing/Main/Main";
 import { Route, Routes } from "react-router-dom";
+import { LoginProvider } from "./Components/Landing/Login/LoginContext";
 
 function App() {
   const [logged, setLogged] = useState(false);
@@ -13,7 +14,7 @@ function App() {
     console.log("This is the status when user loggs in", logStatus);
   }
   const isLogged = localStorage.getItem("isLoggedIn");
-  console.log("This is the status when user logs out", logged);
+  // console.log("This is the status when user logs out", logged);
 
   // const [errors, setErrors] = useState([]);
   return (
@@ -26,9 +27,14 @@ function App() {
           element={<Main logged={logged} setLogged={setLogged} />}
         />
         <Route path="/main/:id" element={<Main />} />
+
         <Route
           path="/login"
-          element={<Login getLogStatus={getLogStatus} logged={logged} />}
+          element={
+            <LoginProvider>
+              <Login getLogStatus={getLogStatus} logged={logged} />
+            </LoginProvider>
+          }
         />
       </Routes>
 

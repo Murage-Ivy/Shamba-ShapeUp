@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 function PostForm({ setPosts }) {
+
   const [post, setPost] = useState({
     image_url: "",
     description: "",
@@ -21,6 +22,7 @@ function PostForm({ setPosts }) {
       topic: post.topic,
       likes: 0,
       comments: [],
+
     };
     fetch(`https://shamba-shape-up-data.herokuapp.com/${post.topic}`, {
       method: "POST",
@@ -45,8 +47,8 @@ function PostForm({ setPosts }) {
       <br />
 
       <input
-        type={"text"}
-        placeholder="Enter the image url"
+        type={"file"}
+        placeholder="Upload image..."
         name="image_url"
         value={post.image_url}
         onChange={handleChange}
