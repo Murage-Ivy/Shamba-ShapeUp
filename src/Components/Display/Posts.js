@@ -6,6 +6,11 @@ function Posts({ posts }) {
   // const [likes, setLikes] = useState(0);
 
   const [postcomments, setPostComments] = useState([]);
+  const [likes, setLikes] = useState(0);
+
+  function handleChange(event) {
+    console.log("I liked this post")
+  }
 
   function onSubmitComment(comment) {
     console.log(comment);
@@ -18,7 +23,7 @@ function Posts({ posts }) {
       .then((res) => res.json())
       .then((data) => {
         setPostComments([...data]);
-      });
+      }).catch((err) => {alert(err.message);});
 
     return () => {
       abortController.abort();
