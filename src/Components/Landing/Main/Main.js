@@ -14,7 +14,7 @@ function Main({logged, setLogged }) {
       <PostForm setPosts={setPosts} /> <br />
       <div className="nav-main">
         <Navside setPosts={setPosts} logged={logged} setLogged={setLogged} /> 
-        <Posts posts={posts} />
+        <Posts posts={posts} setPosts={setPosts}/>
       </div>
     </div>
   );

@@ -47,7 +47,7 @@ function PostForm({ setPosts }) {
       <br />
 
       <input
-        type={"file"}
+        type={"text"}
         placeholder="Upload image..."
         name="image_url"
         value={post.image_url}

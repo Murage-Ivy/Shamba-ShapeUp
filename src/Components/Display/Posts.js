@@ -2,19 +2,40 @@ import React from "react";
 import CommentForm from "./CommentForm";
 import Comments from "./Comments";
 import { useState, useEffect } from "react";
-function Posts({ posts }) {
-  // const [likes, setLikes] = useState(0);
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
+function Posts({ posts, setPosts }) {
   const [postcomments, setPostComments] = useState([]);
-  // const [likes, setLikes] = useState(0);
+  const [errors, setErrors] = useState([]);
 
-  // function handleChange(event) {
-  //   console.log("I liked this post")
-  // }
+  function handleChange(postItem) {
+    fetch(
+      `https://shamba-shape-up-data.herokuapp.com/${postItem.topic.toLowerCase()}/${
+        postItem.id
+      }`,
+      {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ likes: postItem.likes + 1 }),
+      }
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        setPosts((posts) =>
+          posts.map((post) =>
+            post.id === data.id ? { ...post, likes: post.likes + 1 } : post
+          )
+        );
+        setErrors([]);
+      })
+      .catch((error) => {
+        setErrors(error);
+      });
+  }
 
-  // const onDeletePost = () => {
-  //   console.log("This post has been deleted")
-  // }
+  const onDeletePost = () => {
+    console.log("This post has been deleted");
+  };
 
   function onSubmitComment(comment) {
     console.log(comment);
@@ -27,7 +48,10 @@ function Posts({ posts }) {
       .then((res) => res.json())
       .then((data) => {
         setPostComments([...data]);
-      }).catch((err) => {alert(err.message);});
+      })
+      .catch((err) => {
+        alert(err.message);
+      });
 
     return () => {
       abortController.abort();
@@ -41,7 +65,11 @@ function Posts({ posts }) {
       <p>{post.description}</p>
       <div className="action-btn">
         <div className={post.likes}>
-          <i className="fa-solid fa-heart"></i>
+          <FontAwesomeIcon
+            icon={faHeart}
+            style={{ color: "red", marginRight: "5px" }}
+            onClick={() => handleChange(post)}
+          />
           <span>{post.likes} likes</span>
         </div>
         <div className="comment-btn">
@@ -62,6 +90,15 @@ function Posts({ posts }) {
     </div>
   ));
 
-  return <div className="posts">{postList}</div>;
+  return (
+    <div className="posts">
+      {errors ? <div className="errors">{errors}</div> : null}
+      {posts.length > 0 ? (
+        postList
+      ) : (
+        <h2 style={{ color: "#ccc" }}>Loading....</h2>
+      )}
+    </div>
+  );
 }
 export default Posts;
