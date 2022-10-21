@@ -4,7 +4,8 @@ import Comments from "./Comments";
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
-function Posts({ posts, setPosts }) {
+import {faTrash} from "@fortawesome/free-solid-svg-icons";
+function Posts({ posts, setPosts, handleAddLike }) {
   const [postcomments, setPostComments] = useState([]);
   const [errors, setErrors] = useState([]);
 
@@ -20,12 +21,8 @@ function Posts({ posts, setPosts }) {
       }
     )
       .then((res) => res.json())
-      .then((data) => {
-        setPosts((posts) =>
-          posts.map((post) =>
-            post.id === data.id ? { ...post, likes: post.likes + 1 } : post
-          )
-        );
+      .then((updatedItem) => {
+        handleAddLike(updatedItem);
         setErrors([]);
       })
       .catch((error) => {
@@ -60,16 +57,21 @@ function Posts({ posts, setPosts }) {
 
   const postList = posts.map((post) => (
     <div key={post.id} className="post">
-      <i className="fa-solid fa-trash"></i>
+      <FontAwesomeIcon icon={faTrash} className="fa-trash" onClick={onDeletePost}/>
       <img src={post.image_url} alt={"farm"} />
       <p>{post.description}</p>
       <div className="action-btn">
         <div className={post.likes}>
-          <FontAwesomeIcon
+          {
+            true?   <FontAwesomeIcon
             icon={faHeart}
             style={{ color: "red", marginRight: "5px" }}
             onClick={() => handleChange(post)}
-          />
+          />:  <FontAwesomeIcon
+          icon={faHeart}
+          style={{ color: "transparent", marginRight: "5px" }}
+        />
+          }
           <span>{post.likes} likes</span>
         </div>
         <div className="comment-btn">

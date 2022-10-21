@@ -167,8 +167,9 @@ textarea {
 /* Delete button style */
 .fa-trash {
   color: #1c6758;
-  text-align: right;
   display: block;
+  float: right;
+  clear: both;
   padding: 10px 20px;
 }
 
